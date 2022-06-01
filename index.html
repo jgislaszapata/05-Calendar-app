@@ -19,6 +19,10 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="/develop/styles.css" />
+    <script
+    type="text/javascript"
+    src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.27.0/moment.min.js"
+  ></script>
     <title>Work Day Scheduler</title>
   </head>
 
@@ -26,14 +30,20 @@
     <header class="jumbotron">
       <h1 class="display-3">Work Day Scheduler</h1>
       <p class="lead">A simple calendar app for scheduling your work day</p>
-      <p id="currentDay" class="lead"></p>
+      <p id="current-day" class="lead"></p>
     </header>
-    <div class="container">
-      <!-- Timeblocks go here -->
-    </div>
+    <!-- This is the main container for all time divs -->
+    <div class="container" id="container-main">
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
-    <script href="/develop/script.js"></script>
+      <!-- Div for 9AM Timeblock -->
+      <div class="input-group" data-hour="9">
+        <div>
+
+        </div>
+      </div>
+    </div>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="/develop/script.js"></script>
   </body>
 </html>
