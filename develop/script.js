@@ -3,6 +3,9 @@ var currentDayEl = $(`#current-day`);
 var currentDateTime = moment().format("dddd MMM Do YYYY, h:mm a");
 console.log(currentDateTime);
 
+// Create variable for save button
+var btnSave = $(".saveBtn");
+
 // Write currentDayEl to html
 currentDayEl.text(currentDateTime);
 
@@ -60,7 +63,7 @@ var hourFiveText = $(".hour-5");
 hourFiveText.text(hourFive);
 
 
-// Check time of hour slot to current time
+// Compare time of hour slot to current time
 
 function timeCompare() {
     // Check hour nine 
@@ -159,3 +162,12 @@ function timeCompare() {
 }
 
 timeCompare();
+
+
+
+
+// btnSave.on("click", function(event){
+//     event.preventDefault();
+//     console.log('I was clicked');
+// })
+
